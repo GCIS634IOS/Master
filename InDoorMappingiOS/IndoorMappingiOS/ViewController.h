@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MapKit;
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet MKMapView *indoorMap;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *getCurrentLocation;
+@property (weak, nonatomic) IBOutlet UILabel *currentLocationField;
 
 @end
-

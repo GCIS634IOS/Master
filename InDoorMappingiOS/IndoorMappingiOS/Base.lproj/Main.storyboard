@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="81w-6o-wVL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Indoor Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -12,14 +13,70 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
+                    <string key="title" base64-UTF8="YES">
+SW5kb29yEE1hcA
+</string>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
+                                <rect key="frame" x="20" y="81" width="560" height="455"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Z4L-em-NhE"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyo-8X-yHy">
+                                <rect key="frame" x="20" y="551" width="560" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="yBs-2Z-gfo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="Fyo-8X-yHy" secondAttribute="trailing" id="Ujq-mD-5uu"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YCf-67-zXM"/>
+                            <constraint firstItem="Fyo-8X-yHy" firstAttribute="top" secondItem="eEt-AX-8lj" secondAttribute="bottom" constant="15" id="aA9-xt-8js"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="cea-RY-UyU"/>
+                            <constraint firstItem="Fyo-8X-yHy" firstAttribute="leading" secondItem="eEt-AX-8lj" secondAttribute="leading" id="q7k-nC-F08"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qNw-DA-dM9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fyo-8X-yHy" secondAttribute="bottom" constant="8" symbolic="YES" id="xEh-CM-CTc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Indoor Map" id="Oqq-t2-cE9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="0d0-s9-sPt"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentLocationField" destination="Fyo-8X-yHy" id="qc5-vS-2NU"/>
+                        <outlet property="getCurrentLocation" destination="0d0-s9-sPt" id="bsQ-hz-baR"/>
+                        <outlet property="indoorMap" destination="eEt-AX-8lj" id="KL0-1W-IXB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1929" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Ax-Tj-n4a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="81w-6o-wVL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtd-MH-cbC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HMA-ij-b5k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXK-HM-OfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="399"/>
         </scene>
     </scenes>
 </document>

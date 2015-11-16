@@ -15,6 +15,7 @@
 		35DF8C6C1BED1A9B006D701E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DF8C6A1BED1A9B006D701E /* LaunchScreen.storyboard */; };
 		35DF8C771BED1A9B006D701E /* IndoorMappingiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF8C761BED1A9B006D701E /* IndoorMappingiOSTests.m */; };
 		35DF8C821BED1A9B006D701E /* IndoorMappingiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF8C811BED1A9B006D701E /* IndoorMappingiOSUITests.m */; };
+		73C820681BFA5C0100191A4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820671BFA5C0100191A4E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		35DF8C7D1BED1A9B006D701E /* IndoorMappingiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorMappingiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DF8C811BED1A9B006D701E /* IndoorMappingiOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndoorMappingiOSUITests.m; sourceTree = "<group>"; };
 		35DF8C831BED1A9B006D701E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C820671BFA5C0100191A4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C820681BFA5C0100191A4E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		35DF8C501BED1A9B006D701E = {
 			isa = PBXGroup;
 			children = (
+				73C820671BFA5C0100191A4E /* MapKit.framework */,
 				35DF8C5B1BED1A9B006D701E /* IndoorMappingiOS */,
 				35DF8C751BED1A9B006D701E /* IndoorMappingiOSTests */,
 				35DF8C801BED1A9B006D701E /* IndoorMappingiOSUITests */,
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gannon.cis.IndoorMappingiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gannon.cis.IndoorMappingiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +504,7 @@
 				35DF8C881BED1A9B006D701E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35DF8C891BED1A9B006D701E /* Build configuration list for PBXNativeTarget "IndoorMappingiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				35DF8C8B1BED1A9B006D701E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35DF8C8C1BED1A9B006D701E /* Build configuration list for PBXNativeTarget "IndoorMappingiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				35DF8C8E1BED1A9B006D701E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
