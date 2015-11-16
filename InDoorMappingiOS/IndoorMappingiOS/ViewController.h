@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @import MapKit;
+@import CoreLocation;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *indoorMap;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *getCurrentLocation;
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationField;
+
+// CoreLocation properties
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
