@@ -20,7 +20,7 @@ SW5kb29yEE1hcA
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
                                 <rect key="frame" x="20" y="81" width="560" height="455"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Z4L-em-NhE"/>
