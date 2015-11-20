@@ -17,7 +17,6 @@
 		35DF8C821BED1A9B006D701E /* IndoorMappingiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF8C811BED1A9B006D701E /* IndoorMappingiOSUITests.m */; };
 		73C820681BFA5C0100191A4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820671BFA5C0100191A4E /* MapKit.framework */; };
 		73C8206A1BFA66E500191A4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820691BFA66E500191A4E /* CoreLocation.framework */; };
-		73F3FB611BFFA27E00622828 /* FloorMapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F3FB601BFFA27E00622828 /* FloorMapReader.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +55,6 @@
 		35DF8C831BED1A9B006D701E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73C820671BFA5C0100191A4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		73C820691BFA66E500191A4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		73F3FB5F1BFFA27E00622828 /* FloorMapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorMapReader.h; sourceTree = "<group>"; };
-		73F3FB601BFFA27E00622828 /* FloorMapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorMapReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +117,6 @@
 				35DF8C681BED1A9B006D701E /* Assets.xcassets */,
 				35DF8C6A1BED1A9B006D701E /* LaunchScreen.storyboard */,
 				35DF8C6D1BED1A9B006D701E /* Info.plist */,
-				73F3FB621BFFA28900622828 /* PDFFloorPlan */,
 				35DF8C5C1BED1A9B006D701E /* Supporting Files */,
 			);
 			path = IndoorMappingiOS;
@@ -150,24 +146,6 @@
 				35DF8C831BED1A9B006D701E /* Info.plist */,
 			);
 			path = IndoorMappingiOSUITests;
-			sourceTree = "<group>";
-		};
-		73F3FB621BFFA28900622828 /* PDFFloorPlan */ = {
-			isa = PBXGroup;
-			children = (
-				73F3FB631BFFA2D500622828 /* PDF Files */,
-				73F3FB5F1BFFA27E00622828 /* FloorMapReader.h */,
-				73F3FB601BFFA27E00622828 /* FloorMapReader.m */,
-			);
-			name = PDFFloorPlan;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		73F3FB631BFFA2D500622828 /* PDF Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "PDF Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +280,6 @@
 			files = (
 				35DF8C641BED1A9B006D701E /* ViewController.m in Sources */,
 				35DF8C611BED1A9B006D701E /* AppDelegate.m in Sources */,
-				73F3FB611BFFA27E00622828 /* FloorMapReader.m in Sources */,
 				35DF8C5E1BED1A9B006D701E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
