@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FloorMapReader.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
     [super viewDidLoad];
     [self initCoreLocation];
     [self setRegionToZurn];
+    [self readPDF];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,4 +51,9 @@
     [self.indoorMap setRegion:region];
 }
 
+- (void)readPDF
+{
+    FloorMapReader *newFloorMapReader = [FloorMapReader alloc];
+    [newFloorMapReader initURL:3];
+}
 @end
