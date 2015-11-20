@@ -24,6 +24,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)refreshRegion:(id)sender {
+    
+    [self viewDidLoad];
+}
 
 - (void)initCoreLocation
 {

@@ -13,7 +13,7 @@
 @interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *indoorMap;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *getCurrentLocation;
+
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationField;
 
 // CoreLocation properties

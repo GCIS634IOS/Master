@@ -48,11 +48,14 @@ SW5kb29yEE1hcA
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Indoor Map" id="Oqq-t2-cE9">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="0d0-s9-sPt"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="0d0-s9-sPt">
+                            <connections>
+                                <action selector="refreshRegion:" destination="BYZ-38-t0r" id="Kdg-pY-d90"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="currentLocationField" destination="Fyo-8X-yHy" id="qc5-vS-2NU"/>
-                        <outlet property="getCurrentLocation" destination="0d0-s9-sPt" id="bsQ-hz-baR"/>
                         <outlet property="indoorMap" destination="eEt-AX-8lj" id="KL0-1W-IXB"/>
                     </connections>
                 </viewController>
