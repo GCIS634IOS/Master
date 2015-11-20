@@ -56,6 +56,7 @@
         NSLog(@"cannt open");
         CFRelease (url);
     }
+    CFRelease (url);
 }
 
 @end
