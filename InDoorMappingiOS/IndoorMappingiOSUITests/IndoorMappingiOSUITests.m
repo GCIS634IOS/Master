@@ -35,6 +35,14 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *indoormappingiosIcon = app.scrollViews.otherElements.icons[@"IndoorMappingiOS"];
+    [indoormappingiosIcon tap];
+    [app.alerts[@"Allow \U201cIndoorMappingiOS\U201d to access your location while you use the app?"].collectionViews.buttons[@"Allow"] tap];
+    [indoormappingiosIcon tap];
+    [indoormappingiosIcon tap];
+    
 }
 
 @end
