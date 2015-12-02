@@ -17,9 +17,9 @@
 		35DF8C821BED1A9B006D701E /* IndoorMappingiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF8C811BED1A9B006D701E /* IndoorMappingiOSUITests.m */; };
 		73C820681BFA5C0100191A4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820671BFA5C0100191A4E /* MapKit.framework */; };
 		73C8206A1BFA66E500191A4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820691BFA66E500191A4E /* CoreLocation.framework */; };
-		73F3FB651BFFA94B00622828 /* FloorPlan in Resources */ = {isa = PBXBuildFile; fileRef = 73F3FB641BFFA94B00622828 /* FloorPlan */; settings = {ASSET_TAGS = (); }; };
+		73F3FB651BFFA94B00622828 /* FloorPlan in Resources */ = {isa = PBXBuildFile; fileRef = 73F3FB641BFFA94B00622828 /* FloorPlan */; };
 		73F3FB6A1BFFCA3300622828 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F3FB691BFFCA3300622828 /* QuartzCore.framework */; };
-		73F3FB731BFFD0EF00622828 /* FloorMapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F3FB721BFFD0EF00622828 /* FloorMapReader.m */; settings = {ASSET_TAGS = (); }; };
+		73F3FB731BFFD0EF00622828 /* FloorPlanPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F3FB721BFFD0EF00622828 /* FloorPlanPDF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		73C820691BFA66E500191A4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		73F3FB641BFFA94B00622828 /* FloorPlan */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FloorPlan; sourceTree = "<group>"; };
 		73F3FB691BFFCA3300622828 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		73F3FB711BFFD0EF00622828 /* FloorMapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorMapReader.h; sourceTree = "<group>"; };
-		73F3FB721BFFD0EF00622828 /* FloorMapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorMapReader.m; sourceTree = "<group>"; };
+		73F3FB711BFFD0EF00622828 /* FloorPlanPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlanPDF.h; sourceTree = "<group>"; };
+		73F3FB721BFFD0EF00622828 /* FloorPlanPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorPlanPDF.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 		35DF8C5B1BED1A9B006D701E /* IndoorMappingiOS */ = {
 			isa = PBXGroup;
 			children = (
-				73F3FB711BFFD0EF00622828 /* FloorMapReader.h */,
-				73F3FB721BFFD0EF00622828 /* FloorMapReader.m */,
+				73F3FB711BFFD0EF00622828 /* FloorPlanPDF.h */,
+				73F3FB721BFFD0EF00622828 /* FloorPlanPDF.m */,
 				35DF8C5F1BED1A9B006D701E /* AppDelegate.h */,
 				35DF8C601BED1A9B006D701E /* AppDelegate.m */,
 				35DF8C621BED1A9B006D701E /* ViewController.h */,
@@ -293,7 +293,7 @@
 			files = (
 				35DF8C641BED1A9B006D701E /* ViewController.m in Sources */,
 				35DF8C611BED1A9B006D701E /* AppDelegate.m in Sources */,
-				73F3FB731BFFD0EF00622828 /* FloorMapReader.m in Sources */,
+				73F3FB731BFFD0EF00622828 /* FloorPlanPDF.m in Sources */,
 				35DF8C5E1BED1A9B006D701E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

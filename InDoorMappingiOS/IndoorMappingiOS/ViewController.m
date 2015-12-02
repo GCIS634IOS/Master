@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "FloorMapReader.h"
+#import "FloorPlanPDF.h"
 
 @interface ViewController ()
 
@@ -53,7 +53,7 @@
 
 - (void)readPDF
 {
-    FloorMapReader *newFloorMapReader = [FloorMapReader alloc];
-    [newFloorMapReader initURL:3];
+    FloorPlanPDF *newFloorMapReader = [FloorPlanPDF alloc];
+    [newFloorMapReader initPDFwithFloorNum:3];
 }
 @end

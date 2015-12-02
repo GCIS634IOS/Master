@@ -1,5 +1,5 @@
 //
-//  FloorMapReader.h
+//  FloorPlanPDF.h
 //  IndoorMappingiOS
 //
 //  Created by Almushigih, Hadeel on 11/20/15.
@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 @import CoreGraphics;
 
-@interface FloorMapReader : NSObject
+@interface FloorPlanPDF : NSObject
 
-- (void)initURL:(int)floorNum;
+@property (nonatomic, readonly) CGPDFPageRef PDFPage;
+@property (nonatomic, readonly) CGRect PDFBoxRect;
+
+- (void)initPDFwithFloorNum:(int)floorNum;
 - (void)openPDF:(NSURL*)nsurl;
 
 @end
