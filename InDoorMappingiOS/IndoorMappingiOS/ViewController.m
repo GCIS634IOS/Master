@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Building.h"
+
 #import "FloorPlanPDF.h"
 
 @interface ViewController ()
@@ -49,6 +51,11 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(zurnCoord, distanceinMeters , distanceinMeters);
 
     [self.indoorMap setRegion:region];
+
+}
+-(void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)context
+{
+    
 }
 
 - (void)readPDF
