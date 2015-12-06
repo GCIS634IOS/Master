@@ -7,7 +7,6 @@
 //
 
 #import "MapOverlay.h"
-#import "Building.h"
 
 @implementation MapOverlay
 

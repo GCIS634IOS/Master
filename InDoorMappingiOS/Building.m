@@ -20,7 +20,7 @@
         
         NSDictionary *properties = [NSDictionary dictionaryWithContentsOfFile:filePath];
         
-        CGPoint midPoint = CGPointFromString(properties[@"midCoord"]);
+        CGPoint midPoint = CGPointFromString(properties[@"centerCoord"]);
         
         _centerCoord = CLLocationCoordinate2DMake(midPoint.x, midPoint.y);
         

@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-@import MapKit;
+#import "Building.h"
 
 @interface MapOverlay : NSObject <MKOverlay>
 
-
+- (instancetype)initWithBuilding:(Building *)building ;
 @end

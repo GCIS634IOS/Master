@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 @import MapKit;
 @import CoreLocation;
+#import "Building.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
@@ -18,5 +19,7 @@
 
 // CoreLocation properties
 @property (strong, nonatomic) CLLocationManager *locationManager;
+
+@property (nonatomic, strong) Building *building;
 
 @end

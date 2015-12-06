@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "Building.h"
-
+#import "MapOverlay.h"
+#import "MapOverlayView.h"
 #import "FloorPlanPDF.h"
 
 @interface ViewController ()
@@ -21,6 +21,8 @@
     [super viewDidLoad];
     [self initCoreLocation];
     [self setRegionToZurn];
+    [self addOverlay];
+    
     [self readPDF];
 }
 
@@ -53,8 +55,21 @@
     [self.indoorMap setRegion:region];
 
 }
--(void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)context
-{
+
+- (void)addOverlay {
+    
+    self.building = [[Building alloc] initWithName:@"Zurn"];
+    
+    MapOverlay *overlay = [[MapOverlay alloc] initWithBuilding:self.building];
+    
+    [self.indoorMap addOverlay:overlay];
+}
+
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+    
+    MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay withBuilding:self.building];
+    
+    return overlayView;
     
 }
 
