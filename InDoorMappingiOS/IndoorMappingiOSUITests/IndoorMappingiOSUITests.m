@@ -44,5 +44,17 @@
 //    [indoormappingiosIcon tap];
 //    
 //}
+- (void)testExample{
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *map = [[[[[[[[app.otherElements containingType:XCUIElementTypeNavigationBar identifier:@"Indoor Map"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:1] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeMap].element;
+    [map tap];
+    [map tap];
+    [map tap];
+    [app.navigationBars[@"Indoor Map"].buttons[@"Refresh"] tap];
+    
+}
+
+
 
 @end
