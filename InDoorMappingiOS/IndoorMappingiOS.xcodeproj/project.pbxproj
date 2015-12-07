@@ -23,7 +23,8 @@
 		73F3FB651BFFA94B00622828 /* FloorPlan in Resources */ = {isa = PBXBuildFile; fileRef = 73F3FB641BFFA94B00622828 /* FloorPlan */; };
 		73F3FB6A1BFFCA3300622828 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F3FB691BFFCA3300622828 /* QuartzCore.framework */; };
 		73F3FB731BFFD0EF00622828 /* FloorPlanPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F3FB721BFFD0EF00622828 /* FloorPlanPDF.m */; };
-		F4CFEABF1C1403C100CDB21C /* Floor_3.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CFEABE1C1403C100CDB21C /* Floor_3.png */; };
+		F41238081C151E7F0040C85A /* Floor_3.png in Resources */ = {isa = PBXBuildFile; fileRef = F41238071C151E7F0040C85A /* Floor_3.png */; };
+		F4CFEABF1C1403C100CDB21C /* Floor_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CFEABE1C1403C100CDB21C /* Floor_30.png */; };
 		F4D642911C13D9760014E4CE /* MapOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D642901C13D9760014E4CE /* MapOverlayView.m */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +73,8 @@
 		73F3FB691BFFCA3300622828 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		73F3FB711BFFD0EF00622828 /* FloorPlanPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlanPDF.h; sourceTree = "<group>"; };
 		73F3FB721BFFD0EF00622828 /* FloorPlanPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorPlanPDF.m; sourceTree = "<group>"; };
-		F4CFEABE1C1403C100CDB21C /* Floor_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Floor_3.png; sourceTree = "<group>"; };
+		F41238071C151E7F0040C85A /* Floor_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Floor_3.png; sourceTree = "<group>"; };
+		F4CFEABE1C1403C100CDB21C /* Floor_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Floor_30.png; sourceTree = "<group>"; };
 		F4D6428F1C13D9760014E4CE /* MapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverlayView.h; sourceTree = "<group>"; };
 		F4D642901C13D9760014E4CE /* MapOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +133,8 @@
 		35DF8C5B1BED1A9B006D701E /* IndoorMappingiOS */ = {
 			isa = PBXGroup;
 			children = (
-				F4CFEABE1C1403C100CDB21C /* Floor_3.png */,
+				F4CFEABE1C1403C100CDB21C /* Floor_30.png */,
+				F41238071C151E7F0040C85A /* Floor_3.png */,
 				73AD88741C13A22A001F5764 /* MapOverlay.h */,
 				F4D6428F1C13D9760014E4CE /* MapOverlayView.h */,
 				F4D642901C13D9760014E4CE /* MapOverlayView.m */,
@@ -286,7 +289,8 @@
 			files = (
 				73AD887B1C13AC6E001F5764 /* Zurn.plist in Resources */,
 				35DF8C6C1BED1A9B006D701E /* LaunchScreen.storyboard in Resources */,
-				F4CFEABF1C1403C100CDB21C /* Floor_3.png in Resources */,
+				F4CFEABF1C1403C100CDB21C /* Floor_30.png in Resources */,
+				F41238081C151E7F0040C85A /* Floor_3.png in Resources */,
 				35DF8C691BED1A9B006D701E /* Assets.xcassets in Resources */,
 				73F3FB651BFFA94B00622828 /* FloorPlan in Resources */,
 				35DF8C671BED1A9B006D701E /* Main.storyboard in Resources */,

@@ -5,12 +5,12 @@
 	<key>centerCoord</key>
 	<string>{42.126920,-80.087162}</string>
 	<key>overlayTopLeftCoord</key>
-	<string>{42.127448,-80.087648}</string>
+	<string>{42.12751033714931,-80.087706228265972}</string>
 	<key>overlayTopRightCoord</key>
-	<string>{42.127448,-80.086679}</string>
+	<string>{42.12751033714931,-80.086617771734069}</string>
 	<key>overlayBottomLeftCoord</key>
-	<string>{42.126375,-80.087648}</string>
+	<string>{42.126329657349551,-80.087706228265972}</string>
 	<key>overlayBottomRightCoord</key>
-	<string>{42.126375, -80.086679}</string>
+	<string>{42.126329657349551,-80.086617771734069}</string>
 </dict>
 </plist>
