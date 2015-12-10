@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W6M-vN-qZ0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W6M-vN-qZ0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,34 +20,21 @@ SW5kb29yEE1hcA
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
-                                <rect key="frame" x="20" y="81" width="560" height="455"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
+                                <rect key="frame" x="20" y="125" width="560" height="411"/>
                                 <animations/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Z4L-em-NhE"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyo-8X-yHy">
-                                <rect key="frame" x="20" y="551" width="560" height="41"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="yBs-2Z-gfo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="Fyo-8X-yHy" secondAttribute="trailing" id="Ujq-mD-5uu"/>
                             <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YCf-67-zXM"/>
-                            <constraint firstItem="Fyo-8X-yHy" firstAttribute="top" secondItem="eEt-AX-8lj" secondAttribute="bottom" constant="15" id="aA9-xt-8js"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eEt-AX-8lj" secondAttribute="bottom" constant="64" id="ZFy-q1-s8T"/>
                             <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="cea-RY-UyU"/>
-                            <constraint firstItem="Fyo-8X-yHy" firstAttribute="leading" secondItem="eEt-AX-8lj" secondAttribute="leading" id="q7k-nC-F08"/>
                             <constraint firstItem="eEt-AX-8lj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qNw-DA-dM9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fyo-8X-yHy" secondAttribute="bottom" constant="8" symbolic="YES" id="xEh-CM-CTc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Indoor Map" id="Oqq-t2-cE9">
@@ -58,7 +45,6 @@ SW5kb29yEE1hcA
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="currentLocationField" destination="Fyo-8X-yHy" id="qc5-vS-2NU"/>
                         <outlet property="indoorMap" destination="eEt-AX-8lj" id="KL0-1W-IXB"/>
                     </connections>
                 </viewController>
@@ -66,10 +52,9 @@ SW5kb29yEE1hcA
             </objects>
             <point key="canvasLocation" x="2813" y="1071"/>
         </scene>
-        <!--Master View Controller-->
+        <!--GU Buildings-->
         <scene sceneID="A2N-27-yxG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YqU-j0-u71" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="E9b-R7-EnN" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fcl-eT-pgw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -87,7 +72,7 @@ SW5kb29yEE1hcA
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="ERJ-1U-5ky" kind="showDetail" id="wxe-M9-dOt"/>
+                                    <segue destination="ERJ-1U-5ky" kind="showDetail" identifier="showDetail" id="wxe-M9-dOt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -96,8 +81,9 @@ SW5kb29yEE1hcA
                             <outlet property="delegate" destination="E9b-R7-EnN" id="2Ou-MB-af0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="zWh-hU-IoA"/>
+                    <navigationItem key="navigationItem" title="GU Buildings" id="zWh-hU-IoA"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YqU-j0-u71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1205" y="1071"/>
         </scene>

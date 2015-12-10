@@ -30,15 +30,16 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.buildingName = [self.detailItem description];
+        [self setRegion];
+        [self addOverlay];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initCoreLocation];
-    [self setRegionToZurn];
-    [self addOverlay];
+    [self configureView];
     
     [self readPDF];
 }
@@ -60,22 +61,32 @@
     [self.locationManager startUpdatingLocation];
 }
 
-- (void)setRegionToZurn
+- (void)setRegion
 {
-    //42.126920, -80.087162
-    CLLocationCoordinate2D zurnCoord = {.latitude =  42.126920, .longitude =  -80.087162};
-
-    CLLocationDistance distanceinMeters = 90;
+    CLLocationCoordinate2D coord;
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(zurnCoord, distanceinMeters , distanceinMeters);
+    NSArray *objectsPlist = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GUBuildingsList" ofType:@"plist"]];
+    
+    int item = (int)[objectsPlist indexOfObject:self.buildingName];
 
+    switch (item) {
+  case 0:
+    {
+    //42.126920, -80.087162
+    coord = CLLocationCoordinate2DMake(42.126920,-80.087162);
+    }
+    break;
+    }
+    
+    CLLocationDistance distanceinMeters = 90;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, distanceinMeters , distanceinMeters);
     [self.indoorMap setRegion:region];
 
 }
 
 - (void)addOverlay {
     
-    self.building = [[Building alloc] initWithName:@"Zurn"];
+    self.building = [[Building alloc] initWithName:self.buildingName];
     
     MapOverlay *overlay = [[MapOverlay alloc] initWithBuilding:self.building];
     
