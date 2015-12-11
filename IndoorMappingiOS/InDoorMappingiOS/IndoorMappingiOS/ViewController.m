@@ -146,6 +146,7 @@
         coordinate = CLLocationCoordinate2DMake(42.126525, -80.087146);
         [self showRoom:&coordinate room:self.roomNumberToSearch.text];
     }
+    [self.view endEditing:YES];
 }
 
 - (void)updateView
