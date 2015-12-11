@@ -111,11 +111,17 @@
     [newFloorMapReader initPDFwithFloorNum:3];
 }
 
+-(void)removeAllAnnotations{
+    id userLocation = [self.indoorMap userLocation];
+    [self.indoorMap removeAnnotations:[self.indoorMap annotations]];
+    
+    if(userLocation != nil){
+        [self.indoorMap setShowsUserLocation:YES];
+    }
+}
+
 - (void)showRoom:(CLLocationCoordinate2D *)coordinate room: (NSString*)roomNum
 {
-//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(*coordinate, 90, 90);
-//    [self.indoorMap setRegion:[self.indoorMap regionThatFits:region] animated:YES];
-    
     // Add an annotation
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
     point.coordinate = *(coordinate);
@@ -126,6 +132,10 @@
 }
 
 -(IBAction)searchRoom:(id)sender{
+    //keyboard should be removed
+    [self.view endEditing:YES];
+    [self removeAllAnnotations];
+    
     CLLocationCoordinate2D coordinate;
     
     if([self.roomNumberToSearch.text isEqual:@"322"]){
