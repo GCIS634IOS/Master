@@ -22,8 +22,6 @@
 
 @property (nonatomic, strong) Building *building;
 
-@property (nonatomic, retain) NSString* buildingName;
-
 // Detail item to be used to configure the map with the floorplan
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UITextField *roomNumberToSearch;

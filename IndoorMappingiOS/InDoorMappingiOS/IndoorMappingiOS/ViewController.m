@@ -34,7 +34,9 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.buildingName = [self.detailItem description];
+        self.building = [[Building alloc] initWithName:[self.detailItem description]];
+        self.building.floorNum = @"First";
+//        self.building.buildingName = [self.detailItem description];
         [self setRegion];
         [self addOverlay];
     }
@@ -65,13 +67,20 @@
     [self.locationManager startUpdatingLocation];
 }
 
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation* currentLocation;
+    currentLocation = [locations lastObject];
+    // here we get the current location
+}
+
 - (void)setRegion
 {
     CLLocationCoordinate2D coord;
     
     NSArray *objectsPlist = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GUBuildingsList" ofType:@"plist"]];
     
-    int item = (int)[objectsPlist indexOfObject:self.buildingName];
+    int item = (int)[objectsPlist indexOfObject:self.building.buildingName];
 
     switch (item) {
   case 0:
@@ -90,7 +99,6 @@
 
 - (void)addOverlay {
     
-    self.building = [[Building alloc] initWithName:self.buildingName];
     
     MapOverlay *overlay = [[MapOverlay alloc] initWithBuilding:self.building];
     
@@ -140,21 +148,31 @@
     }
 }
 
+- (void)updateView
+{
+    [self setRegion];
+    [self addOverlay];
+}
+
+
 - (IBAction)mySegmentedControlAction:(id)sender {
     switch (self.mySegmentedControl.selectedSegmentIndex) {
         case 0:
+            self.building.floorNum = [self.mySegmentedControl titleForSegmentAtIndex:self.mySegmentedControl.selectedSegmentIndex];
             
             break;
         case 1:
-            
+            self.building.floorNum = [self.mySegmentedControl titleForSegmentAtIndex:self.mySegmentedControl.selectedSegmentIndex];
             break;
         case 2:
-            
+            self.building.floorNum = [self.mySegmentedControl titleForSegmentAtIndex:self.mySegmentedControl.selectedSegmentIndex];
             break;
         case 3:
-            
+            self.building.floorNum = [self.mySegmentedControl titleForSegmentAtIndex:self.mySegmentedControl.selectedSegmentIndex];
             break;
     }
+    
+    [self updateView];
 }
 
 @end

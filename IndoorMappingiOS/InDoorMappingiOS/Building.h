@@ -23,6 +23,10 @@
 
 @property (nonatomic, readonly) CLLocationCoordinate2D overlayBottomRightCoordinate;
 
+@property (nonatomic, retain) NSString* buildingName;
+
+@property (nonatomic, retain) NSString* floorNum;
+
 - (instancetype)initWithName:(NSString *)name;
 
 @end

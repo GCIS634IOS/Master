@@ -16,6 +16,8 @@
     
     if (self) {
         
+        _buildingName = name;
+        
         NSString *filePath = [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
         
         NSDictionary *properties = [NSDictionary dictionaryWithContentsOfFile:filePath];

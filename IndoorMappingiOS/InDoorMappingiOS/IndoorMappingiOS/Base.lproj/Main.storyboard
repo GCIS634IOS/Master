@@ -20,7 +20,7 @@ SW5kb29yEE1hcA
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
                                 <rect key="frame" x="20" y="169" width="560" height="411"/>
                                 <animations/>
                                 <connections>
@@ -38,7 +38,7 @@ SW5kb29yEE1hcA
                                 <rect key="frame" x="192" y="81" width="97" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="xu2-KT-waa"/>
+                                    <constraint firstAttribute="width" constant="97" id="sy5-Dz-vVu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -57,7 +57,7 @@ SW5kb29yEE1hcA
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aAm-Yp-RgG">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aAm-Yp-RgG">
                                 <rect key="frame" x="20" y="133" width="560" height="29"/>
                                 <segments>
                                     <segment title="First"/>
@@ -73,21 +73,21 @@ SW5kb29yEE1hcA
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OkD-Xx-T7A" firstAttribute="leading" secondItem="ldI-L3-BUN" secondAttribute="trailing" constant="31" id="0Bc-Go-cof"/>
-                            <constraint firstItem="OkD-Xx-T7A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="1X4-pp-LBp"/>
-                            <constraint firstItem="eIF-O7-Wrc" firstAttribute="top" secondItem="OkD-Xx-T7A" secondAttribute="top" id="5yC-P4-pqb"/>
-                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="trailing" secondItem="eEt-AX-8lj" secondAttribute="trailing" id="KOA-5m-mtB"/>
-                            <constraint firstItem="ldI-L3-BUN" firstAttribute="baseline" secondItem="eIF-O7-Wrc" secondAttribute="baseline" id="RHb-s4-laJ"/>
-                            <constraint firstItem="eIF-O7-Wrc" firstAttribute="leading" secondItem="OkD-Xx-T7A" secondAttribute="trailing" constant="49" id="RL2-QL-yIC"/>
-                            <constraint firstItem="YAK-lc-knx" firstAttribute="top" secondItem="ldI-L3-BUN" secondAttribute="bottom" constant="8" symbolic="YES" id="SUe-Ga-Meh"/>
-                            <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="aAm-Yp-RgG" secondAttribute="bottom" constant="8" symbolic="YES" id="Sfy-Ct-eUd"/>
-                            <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YCf-67-zXM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eEt-AX-8lj" secondAttribute="bottom" constant="64" id="ZFy-q1-s8T"/>
-                            <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="cea-RY-UyU"/>
-                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="leading" secondItem="eEt-AX-8lj" secondAttribute="leading" id="eZN-I5-bAY"/>
-                            <constraint firstItem="ldI-L3-BUN" firstAttribute="leading" secondItem="YAK-lc-knx" secondAttribute="leading" id="hsL-vj-rAr"/>
-                            <constraint firstItem="eEt-AX-8lj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qNw-DA-dM9"/>
-                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="leading" secondItem="YAK-lc-knx" secondAttribute="leading" id="zfm-sf-Afv"/>
+                            <constraint firstItem="YAK-lc-knx" firstAttribute="leading" secondItem="aAm-Yp-RgG" secondAttribute="leading" id="1Gg-kO-LRv"/>
+                            <constraint firstItem="eIF-O7-Wrc" firstAttribute="leading" secondItem="OkD-Xx-T7A" secondAttribute="trailing" constant="49" id="6rI-7o-wfh"/>
+                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="trailing" secondItem="eEt-AX-8lj" secondAttribute="trailing" id="7gX-n2-CTF"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="leading" secondItem="aAm-Yp-RgG" secondAttribute="leading" id="Btu-0p-EMK"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="aAm-Yp-RgG" secondAttribute="bottom" constant="8" symbolic="YES" id="ITv-TL-zAb"/>
+                            <constraint firstItem="ldI-L3-BUN" firstAttribute="baseline" secondItem="eIF-O7-Wrc" secondAttribute="baseline" id="Rfw-9d-SHF"/>
+                            <constraint firstItem="OkD-Xx-T7A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="TWg-93-K2J"/>
+                            <constraint firstItem="YAK-lc-knx" firstAttribute="top" secondItem="ldI-L3-BUN" secondAttribute="bottom" constant="8" symbolic="YES" id="Wv6-jh-Gpx"/>
+                            <constraint firstItem="OkD-Xx-T7A" firstAttribute="leading" secondItem="ldI-L3-BUN" secondAttribute="trailing" constant="31" id="edt-oJ-YJK"/>
+                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="top" secondItem="OkD-Xx-T7A" secondAttribute="bottom" constant="22" id="gLC-bu-LmG"/>
+                            <constraint firstItem="YAK-lc-knx" firstAttribute="leading" secondItem="ldI-L3-BUN" secondAttribute="leading" id="lnH-Zd-LOG"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="p7f-qf-Hkw"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uAo-hi-Ciy"/>
+                            <constraint firstItem="eIF-O7-Wrc" firstAttribute="top" secondItem="OkD-Xx-T7A" secondAttribute="top" id="wHF-d4-Jkx"/>
+                            <constraint firstAttribute="bottom" secondItem="eEt-AX-8lj" secondAttribute="bottom" constant="20" symbolic="YES" id="yG9-I8-jUK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Indoor Map" id="Oqq-t2-cE9">

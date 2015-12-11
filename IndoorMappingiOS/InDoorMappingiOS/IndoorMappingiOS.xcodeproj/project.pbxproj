@@ -23,6 +23,7 @@
 		73C5C5A21C18B3A500FFA1F1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C5C5A11C18B3A500FFA1F1 /* MasterViewController.m */; };
 		73C820681BFA5C0100191A4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820671BFA5C0100191A4E /* MapKit.framework */; };
 		73C8206A1BFA66E500191A4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C820691BFA66E500191A4E /* CoreLocation.framework */; };
+		73F2930B1C1B51E300A59BBF /* Zurn_floor3Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F2930A1C1B51E300A59BBF /* Zurn_floor3Map.png */; settings = {ASSET_TAGS = (); }; };
 		73F3FB651BFFA94B00622828 /* FloorPlan in Resources */ = {isa = PBXBuildFile; fileRef = 73F3FB641BFFA94B00622828 /* FloorPlan */; };
 		73F3FB6A1BFFCA3300622828 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F3FB691BFFCA3300622828 /* QuartzCore.framework */; };
 		73F3FB731BFFD0EF00622828 /* FloorPlanPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F3FB721BFFD0EF00622828 /* FloorPlanPDF.m */; };
@@ -76,6 +77,7 @@
 		73C5C5A11C18B3A500FFA1F1 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		73C820671BFA5C0100191A4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		73C820691BFA66E500191A4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		73F2930A1C1B51E300A59BBF /* Zurn_floor3Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zurn_floor3Map.png; sourceTree = "<group>"; };
 		73F3FB641BFFA94B00622828 /* FloorPlan */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FloorPlan; sourceTree = "<group>"; };
 		73F3FB691BFFCA3300622828 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		73F3FB711BFFD0EF00622828 /* FloorPlanPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlanPDF.h; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				F4CFEABE1C1403C100CDB21C /* Floor_30.png */,
 				73B88C541C16388400981042 /* Floor_3.png */,
 				F41238071C151E7F0040C85A /* Floor_32.png */,
+				73F2930A1C1B51E300A59BBF /* Zurn_floor3Map.png */,
 				73C5C5A01C18B3A500FFA1F1 /* MasterViewController.h */,
 				73C5C5A11C18B3A500FFA1F1 /* MasterViewController.m */,
 				73AD88741C13A22A001F5764 /* MapOverlay.h */,
@@ -305,6 +308,7 @@
 				F41238081C151E7F0040C85A /* Floor_32.png in Resources */,
 				73B88C551C16388400981042 /* Floor_3.png in Resources */,
 				35DF8C691BED1A9B006D701E /* Assets.xcassets in Resources */,
+				73F2930B1C1B51E300A59BBF /* Zurn_floor3Map.png in Resources */,
 				73F3FB651BFFA94B00622828 /* FloorPlan in Resources */,
 				35DF8C671BED1A9B006D701E /* Main.storyboard in Resources */,
 			);
