@@ -11,7 +11,11 @@
 #import "MapOverlayView.h"
 #import "FloorPlanPDF.h"
 
+//coordinates for room 322: 42.127207, -80.087615
+
 @interface ViewController ()
+
+@property(nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 @end
 
@@ -106,4 +110,34 @@
     FloorPlanPDF *newFloorMapReader = [FloorPlanPDF alloc];
     [newFloorMapReader initPDFwithFloorNum:3];
 }
+
+- (void)showRoom:(CLLocationCoordinate2D *)coordinate room: (NSString*)roomNum
+{
+//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(*coordinate, 90, 90);
+//    [self.indoorMap setRegion:[self.indoorMap regionThatFits:region] animated:YES];
+    
+    // Add an annotation
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = *(coordinate);
+    point.title = roomNum;
+    
+    [self.indoorMap addAnnotation:point];
+
+}
+
+-(IBAction)searchRoom:(id)sender{
+    CLLocationCoordinate2D coordinate;
+    
+    if([self.roomNumberToSearch.text isEqual:@"322"]){
+        //display the coordinate point for this room
+        coordinate = CLLocationCoordinate2DMake(42.127207, -80.087615);
+        [self showRoom:&coordinate room:self.roomNumberToSearch.text];
+    }
+    else if([self.roomNumberToSearch.text isEqual:@"354"]){
+        //these coordinates are actually for 353 but don't align with current image
+        coordinate = CLLocationCoordinate2DMake(42.126525, -80.087146);
+        [self showRoom:&coordinate room:self.roomNumberToSearch.text];
+    }
+}
+
 @end
