@@ -16,7 +16,7 @@
 @interface ViewController ()
 
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
-
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedControl;
 @end
 
 @implementation ViewController
@@ -137,6 +137,23 @@
         //these coordinates are actually for 353 but don't align with current image
         coordinate = CLLocationCoordinate2DMake(42.126525, -80.087146);
         [self showRoom:&coordinate room:self.roomNumberToSearch.text];
+    }
+}
+
+- (IBAction)mySegmentedControlAction:(id)sender {
+    switch (self.mySegmentedControl.selectedSegmentIndex) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
     }
 }
 

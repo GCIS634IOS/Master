@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W6M-vN-qZ0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W6M-vN-qZ0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,27 +20,30 @@ SW5kb29yEE1hcA
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
-                                <rect key="frame" x="20" y="125" width="560" height="411"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-AX-8lj">
+                                <rect key="frame" x="20" y="169" width="560" height="411"/>
                                 <animations/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Z4L-em-NhE"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search for a room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-L3-BUN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-L3-BUN">
                                 <rect key="frame" x="20" y="85" width="141" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room #" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkD-Xx-T7A">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room #" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkD-Xx-T7A">
                                 <rect key="frame" x="192" y="81" width="97" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="xu2-KT-waa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-O7-Wrc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-O7-Wrc">
                                 <rect key="frame" x="338" y="81" width="48" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Search"/>
@@ -48,14 +51,43 @@ SW5kb29yEE1hcA
                                     <action selector="searchRoom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SXK-ns-dyF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-lc-knx">
+                                <rect key="frame" x="20" y="114" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aAm-Yp-RgG">
+                                <rect key="frame" x="20" y="133" width="560" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Forth"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="acy-Oq-z4H"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OkD-Xx-T7A" firstAttribute="leading" secondItem="ldI-L3-BUN" secondAttribute="trailing" constant="31" id="0Bc-Go-cof"/>
+                            <constraint firstItem="OkD-Xx-T7A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="1X4-pp-LBp"/>
+                            <constraint firstItem="eIF-O7-Wrc" firstAttribute="top" secondItem="OkD-Xx-T7A" secondAttribute="top" id="5yC-P4-pqb"/>
+                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="trailing" secondItem="eEt-AX-8lj" secondAttribute="trailing" id="KOA-5m-mtB"/>
+                            <constraint firstItem="ldI-L3-BUN" firstAttribute="baseline" secondItem="eIF-O7-Wrc" secondAttribute="baseline" id="RHb-s4-laJ"/>
+                            <constraint firstItem="eIF-O7-Wrc" firstAttribute="leading" secondItem="OkD-Xx-T7A" secondAttribute="trailing" constant="49" id="RL2-QL-yIC"/>
+                            <constraint firstItem="YAK-lc-knx" firstAttribute="top" secondItem="ldI-L3-BUN" secondAttribute="bottom" constant="8" symbolic="YES" id="SUe-Ga-Meh"/>
+                            <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="aAm-Yp-RgG" secondAttribute="bottom" constant="8" symbolic="YES" id="Sfy-Ct-eUd"/>
                             <constraint firstItem="eEt-AX-8lj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YCf-67-zXM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eEt-AX-8lj" secondAttribute="bottom" constant="64" id="ZFy-q1-s8T"/>
                             <constraint firstItem="eEt-AX-8lj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="cea-RY-UyU"/>
+                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="leading" secondItem="eEt-AX-8lj" secondAttribute="leading" id="eZN-I5-bAY"/>
+                            <constraint firstItem="ldI-L3-BUN" firstAttribute="leading" secondItem="YAK-lc-knx" secondAttribute="leading" id="hsL-vj-rAr"/>
                             <constraint firstItem="eEt-AX-8lj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qNw-DA-dM9"/>
+                            <constraint firstItem="aAm-Yp-RgG" firstAttribute="leading" secondItem="YAK-lc-knx" secondAttribute="leading" id="zfm-sf-Afv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Indoor Map" id="Oqq-t2-cE9">
@@ -67,12 +99,13 @@ SW5kb29yEE1hcA
                     </navigationItem>
                     <connections>
                         <outlet property="indoorMap" destination="eEt-AX-8lj" id="KL0-1W-IXB"/>
+                        <outlet property="mySegmentedControl" destination="aAm-Yp-RgG" id="Fe8-fS-e2n"/>
                         <outlet property="roomNumberToSearch" destination="OkD-Xx-T7A" id="Ivj-hu-xDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2813" y="1071"/>
+            <point key="canvasLocation" x="2974" y="1050"/>
         </scene>
         <!--GU Buildings-->
         <scene sceneID="A2N-27-yxG">
@@ -88,7 +121,7 @@ SW5kb29yEE1hcA
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6kf-hD-gCz" id="esC-cB-EnX">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
