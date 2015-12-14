@@ -63,7 +63,7 @@ SW5kb29yEE1hcA
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                     <segment title="Third"/>
-                                    <segment title="Forth"/>
+                                    <segment title="Fourth"/>
                                 </segments>
                                 <connections>
                                     <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="acy-Oq-z4H"/>

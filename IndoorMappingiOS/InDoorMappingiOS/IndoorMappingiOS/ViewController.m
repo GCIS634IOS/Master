@@ -56,6 +56,8 @@
 }
 - (IBAction)refreshRegion:(id)sender {
     
+    self.mySegmentedControl.selectedSegmentIndex = 0;
+    [self removeAllOverlays];
     [self viewDidLoad];
 }
 
@@ -103,6 +105,10 @@
     MapOverlay *overlay = [[MapOverlay alloc] initWithBuilding:self.building];
     
     [self.indoorMap addOverlay:overlay];
+}
+- (void)removeAllOverlays {
+
+[self.indoorMap removeOverlays:self.indoorMap.overlays];
 }
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
@@ -157,6 +163,7 @@
 
 
 - (IBAction)mySegmentedControlAction:(id)sender {
+    
     switch (self.mySegmentedControl.selectedSegmentIndex) {
         case 0:
             self.building.floorNum = [self.mySegmentedControl titleForSegmentAtIndex:self.mySegmentedControl.selectedSegmentIndex];
@@ -173,6 +180,7 @@
             break;
     }
     
+    [self removeAllOverlays];
     [self updateView];
 }
 
